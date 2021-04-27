@@ -14,6 +14,12 @@ public abstract class Shape {
     //Methods
 
     public void draw(){
+        System.out.println(this.toString());
+    }
+
+    @Override
+    public String toString(){
+        return "color=" + color + ", isFilled=" + isFilled + ". ";
 
     }
 }
