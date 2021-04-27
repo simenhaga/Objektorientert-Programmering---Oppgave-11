@@ -1,10 +1,10 @@
 import java.awt.*;
 
-public class circle extends shape{
+public class Circle extends Shape {
     private float radius;
     private Point center;
 
-    public circle(Color color, boolean isFilled, float radius, Point center) {
+    public Circle(Color color, boolean isFilled, float radius, Point center) {
         super(color, isFilled);
         this.radius = radius;
         this.center = center;
