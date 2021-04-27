@@ -18,7 +18,7 @@ public abstract class Shape {
         System.out.println(result);
     }
 
-    public String colorToString() {
+    private String colorToString() {
         String color = String.format("Color(R:%d, G:%d, B:%d)", this.color.getRed(), this.color.getGreen(), this.color.getBlue());
         return String.format("Color: %s, isFilled: %s", color, isFilled);
     }
