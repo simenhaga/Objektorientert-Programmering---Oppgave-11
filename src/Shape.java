@@ -11,15 +11,15 @@ public abstract class Shape {
         this.isFilled = isFilled;
     }
 
-    //Methods
 
+    //Methods
     public void draw(){
-        System.out.println(this.toString());
+        String result = String.format("%s{%s, %s}", this.getClass().getName(), this.colorToString(), this);
+        System.out.println(result);
     }
 
-    @Override
-    public String toString(){
-        return "color=" + color + ", isFilled=" + isFilled + ". ";
-
+    public String colorToString() {
+        String color = String.format("Color(R:%d, G:%d, B:%d)", this.color.getRed(), this.color.getGreen(), this.color.getBlue());
+        return String.format("Color: %s, isFilled: %s", color, isFilled);
     }
 }

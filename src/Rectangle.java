@@ -6,6 +6,7 @@ public class Rectangle extends Shape{
     protected Point topLeft;
     protected Point bottomRight;
 
+
     public Rectangle(Color color, boolean isFilled, float height, float width, Point topLeft) {
         super(color, isFilled);
         this.height = height;
@@ -25,8 +26,7 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        String result = String.format("Rectangle{%s, height: %f, width: %f, topLeft: %s, bottomRight: %s",
-                super.toString(), this.height, this.width, topLeft.toString(), bottomRight.toString());
+        String result = String.format("height: %.2f, width: %.2f, topLeft: %s, bottomRight: %s", this.height, this.width, topLeft.toString(), bottomRight.toString());
         return result;
     }
 }

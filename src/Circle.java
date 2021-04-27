@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Circle extends Shape {
+public class Circle extends Shape{
     private float radius;
     private Point center;
 
@@ -8,5 +8,11 @@ public class Circle extends Shape {
         super(color, isFilled);
         this.radius = radius;
         this.center = center;
+    }
+
+    @Override
+    public String toString() {
+        String result = String.format("radius: %.2f, center: %s", this.radius, center.toString());
+        return result;
     }
 }

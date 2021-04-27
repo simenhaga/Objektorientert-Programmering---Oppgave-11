@@ -7,16 +7,11 @@ public class Point {
         this.y = y;
     }
 
-    public float getX() {
-        return x;
-    }
-
-    public float getY() {
-        return y;
-    }
+    public float getX() { return x; }
+    public float getY() { return y; }
 
     @Override
     public String toString() {
-        return "{" + "x=" + x + ", y=" + y + '}';
+        return String.format("{x: %.2f, y: %.2f}", x, y);
     }
 }
